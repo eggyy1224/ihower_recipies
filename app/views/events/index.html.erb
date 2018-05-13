@@ -3,7 +3,8 @@
 <ul>
   <% @events.each do |event| %>
     <li>
-      <%= link_to event.name, event_path(event) %>
+      <%= link_to event.name, event_path(event) %> 
+      <%= event.created_at.to_s(:ymd) %>
     </li>
   <% end %>
 </ul>
