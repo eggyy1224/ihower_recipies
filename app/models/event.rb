@@ -1,4 +1,6 @@
 class Event < ApplicationRecord
+ include RankedModel
+ ranks :row_order
  STATUS = ["draft", "public", "private"]
  belongs_to :category, optional: true
  has_many :tickets, dependent: :destroy, inverse_of: :event
