@@ -1,0 +1,10 @@
+<h1>Edit Ticket</h1>
+
+<%= form_for [:admin, @event, @ticket] do |f| %>
+  <%= render "form", f: f %>
+
+  <div class="form-group">
+    <%= f.submit "Update", class: "btn btn-primay" %>
+    <%= link_to "Cancel", admin_event_tickets_path(@event) %>
+  </div>
+<% end %>
