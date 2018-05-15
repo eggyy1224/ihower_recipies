@@ -1,0 +1,7 @@
+<h1><%= @event.name %></h1>
+
+<%= form_for [@event, @registration], :url => update_step1_event_registration_path(@event, @registration) do |f| %>
+
+  <%= render "step1_form", f: f %>
+
+<% end %>
