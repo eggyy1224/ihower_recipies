@@ -51,6 +51,9 @@ gem 'jquery-ui-rails'
 gem 'pry'
 gem 'pry-rails'
 gem 'pry-nav'
+gem 'kaminari'
+gem 'ransack'
+
 
 group :development, :test do
   gem 'rspec-rails'
