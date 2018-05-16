@@ -21,6 +21,14 @@ class Admin::EventRegistrationsController < AdminController
 
   end
 
+  def edit
+    @registration = @event.registrations.find_by_uuid(params[:id])
+  end
+
+  def update
+    @registration = @event.registrations.find_by_uuid(params[:id])
+  end
+
   def destroy
     @registration = @event.registrations.find_by_uuid(params[:id])
     @registration.destroy

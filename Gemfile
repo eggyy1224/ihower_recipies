@@ -53,6 +53,7 @@ gem 'pry-rails'
 gem 'pry-nav'
 gem 'kaminari'
 gem 'ransack'
+gem 'paper_trail'
 
 
 group :development, :test do
