@@ -54,6 +54,9 @@ gem 'pry-nav'
 gem 'kaminari'
 gem 'ransack'
 gem 'paper_trail'
+gem 'rubyzip'
+gem 'axlsx'
+gem 'axlsx_rails'
 
 
 group :development, :test do
